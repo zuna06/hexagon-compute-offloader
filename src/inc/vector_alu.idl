@@ -2,6 +2,6 @@
 #include "remote.idl"
 
 interface vector_alu : remote_handle64 {
-    long sum(in sequence<long> n, in sequence<long> p, rout sequence<long> res);
-    long multiply(in sequence<long> n, in sequence<long> p, rout sequence<long> res);
+    long sum(in sequence<long> n, in sequence<long> p, inrout sequence<long> res);
+    long multiply(in sequence<long> n, in sequence<long> p, inrout sequence<long> res);
 }
